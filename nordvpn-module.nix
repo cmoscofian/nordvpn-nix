@@ -25,15 +25,14 @@
     wireguard-tools,
   }: let
     pname = "nordvpn";
-    version = "4.4.0";
+    version = "5.0.0";
 
     nordVPNBase = stdenv.mkDerivation {
       inherit pname version;
 
       src = fetchurl {
         url = "https://repo.nordvpn.com/deb/nordvpn/debian/pool/main/n/nordvpn/nordvpn_${version}_amd64.deb";
-#        hash = "sha256-oFf4uxZsucAh2yW++SQRxFx8+JdL8ZsNzWqzjJ2JqUs=";
-        hash = "sha256-rePBEVe6o49If5dYvIUW361E7nFqngzd+XkiOeehY7w=";
+        hash = "sha256-F7/5WAAGaX3IJ3v/psp9cyWGs7kn2XOiCSN2Q6zeRAY=";
       };
 
       buildInputs = [libxml2 libidn2 libnl libcap_ng sqlite];
