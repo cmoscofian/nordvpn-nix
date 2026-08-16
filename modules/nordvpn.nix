@@ -15,14 +15,14 @@ in
 		version = lib.mkOption
 		{
 			type = lib.types.str;
-			default = "5.0.0";
+			default = "5.3.0";
 			description = "NordVPN package version.";
 		};
 
 		hash = lib.mkOption
 		{
 			type = lib.types.str;
-			default = "sha256-F7/5WAAGaX3IJ3v/psp9cyWGs7kn2XOiCSN2Q6zeRAY=";
+			default = "sha256-NM3qcqdclwDChblQ7S7Jasru1NYHATo6vRg2ZzH4wzQ=";
 			description = "Hash of the NordVPN .deb package.";
 		};
 	};
